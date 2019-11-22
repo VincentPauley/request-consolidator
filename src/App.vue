@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>In this example, imagine several of the same products being rendered 
+    on screen that all request the same data.  But that they are unaware that
+    another component will be making a call for the same resource.</p>
+    <ProductList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ProductList from './components/ProductList'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ProductList
   }
 }
 </script>
