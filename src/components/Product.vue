@@ -19,10 +19,15 @@
       isLoading: false
     }),
     created() {
-      // eslint-disable-next-line no-console
-      console.log('>>> 4 years')
-
       ApiService.getProductData()
+        .then(r => {
+          // eslint-disable-next-line
+          console.log(r.status, r.data)
+        })
+        .catch(e => {
+                    // eslint-disable-next-line
+          console.log(e)
+        })
     }
   }
 </script>
